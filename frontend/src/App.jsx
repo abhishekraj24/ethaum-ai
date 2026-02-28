@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 const QUADRANT_CONFIG = {
   Leader:     { color: "#22c55e", bg: "rgba(34,197,94,0.12)",   border: "#22c55e" },
